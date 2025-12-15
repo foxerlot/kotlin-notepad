@@ -11,7 +11,7 @@ fun main() {
             val newNote: String? = readLine()
 
             if (!file.exists()) {
-                file.writeText(newNote ?: "") // TODO: the elvis thing shouldn't be returning nothing TODO: fix all these damn elvis fuckers!!
+                file.writeText(newNote ?: "") // TODO: the elvis thing shouldn't be returning nothing TODO: fix all these damn elvis operators!!
             } else {
                 file.appendText("\n" + (newNote ?: ""))
             }
